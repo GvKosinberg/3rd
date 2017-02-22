@@ -13,7 +13,7 @@ body {
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 100pt;
+    font-size: 35pt;
     text-decoration: none;
 }
 
@@ -41,8 +41,9 @@ h1, h2, h3, h4 {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 300pt;
+    font-size: 15pt;
     margin-right: 20px;
+    margin-top: 40px;
 }
 
 .post {
@@ -54,9 +55,11 @@ h1, h2, h3, h4 {
 }
 
 .comment {
+    font-style: italic;
     margin: 20px 0px 20px 20px;
 }
 
 .author {
-
+    float: right;
+    font-style: italic;
 }

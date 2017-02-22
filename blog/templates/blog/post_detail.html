@@ -13,7 +13,7 @@
         <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
         <h1>{{ post.title }}</h1>
         <p>{{ post.text}}</p>
-        <p class="author">{{ post.author|linebreaks}}</p>
+        <div class="author">{{ post.author|linebreaks}}</div>
     </div>
     <hr>
     <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
@@ -27,8 +27,10 @@
                     <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
                 {% endif %}
             </div>
-            <strong>{{ comment.author }}</strong>
-            <p>{{ comment.text|linebreaks }}</p>
+            <div class="com_a">
+                {{ comment.author }}
+                <p>{{ comment.text|linebreaks }}</p>
+            </div>
         </div>
         {% endif %}
     {% empty %}
